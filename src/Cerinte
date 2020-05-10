@@ -1,0 +1,46 @@
+Aplicatie 2
+Scrieti o clasa numita JocZaruri, care sa aiba urmatoarele campuri:
+private int valoareZar; 1….6
+private static int numarTotalAruncari;
+private int sumaJucator;
+
+ Apoi scrieti urmatoarele metode:
+
+1) un constructor JocZaruri(int sumaJucator)
+ce va initializa campul sumaJucator al obiectului JocZaruri cu suma disponibila pentru joc
+
+2) aruncareZar()
+ ce va genera atribui campului valoareZar, al obiectului de tipul JocZaruri, un numar aleator intre 1 si 6 si va incrementa cu 1 campul static numarTotalAruncari;
+3) static int comparareZaruri(JocZaruri zar1, JocZaruri zar2)
+care va primi ca si parametru 2 obiecte de tipulJocZaruri si va intoarce:
+-1 daca zar1.valoareZar e mai mare
+0 daca zarurile sunt egale
+1 daca zar2.valoareZar e mai mare
+
+4) adaugaCastig()
+ ce va adauga la suma obiectului castigator miza unui joc, de ex. 10 lei
+
+5) scadePierdere()
+ce va scadea din suma obiectului pierzator miza unui joc, de ex. 10 lei
+
+6) int getSumaJucator()
+va intoarce valoarea campului sumaJucator al obiectului current
+
+7) static int getNumarTotalAruncari()
+va intoarce valoarea campului static numarTotalAruncari
+
+Apoi Creati o clasa Main ce va avea metoda main din care va porni aplicatia si unde:
+- veti crea 2 obiecte de tip JocZaruri si apoi veti porni jocul intre cei 2 jucatori
+- intr-o bucla do while intrebati "Doriti sa jucati?" si cat timp raspunsul este "da"
+	- "aruncati" cele 2 zaruri apeland metoda aruncareZar() a celor 2 obiecte
+	- comparati valorile folosind metoda statica comparareZaruri()
+	- actualizati suma fiecarui jucator in functie de rezultat
+- jocul se opreste cand raspunsul intrebarii "Doriti sa jucati?" este "nu"
+
+La finalul jocului afisati pe ecran numarul total de aruncari cu zarul "numarTotalAruncari" si cu ce sume au ramas cei 2 jucatori.:
+
+
+8)Suplimentar:
+•	jucati 10 jocuri
+•	jucati pana unul din jucatori ramane fara bani
+•	Optional: sa adaugati si un al 3-lea jucator
