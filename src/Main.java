@@ -8,7 +8,7 @@ public class Main {
      private int sumaJucator;
 
      */
-
+ 
     public static void main(String[] args) {
         JocZaruri jucator1 = new JocZaruri(100);
         JocZaruri jucator2 = new JocZaruri(100);
